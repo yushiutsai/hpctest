@@ -84,6 +84,7 @@
     }
   },
   "variables": {
+	  "RG_VNET":"TSMC-EDA-NETWORK",
     "addressPrefix": "10.234.36.0/23",
     "subnetPrefix": "10.234.37.64/27",  
     "virtualNetworkName": "VNET_EDA",
@@ -264,7 +265,7 @@
                       "name": "[variables('ipConfigName')]",
                       "properties": {
                         "subnet": {
-                          "id": "[concat('/subscriptions/', subscription().subscriptionId,'/resourceGroups/', resourceGroup().name, '/providers/Microsoft.Network/virtualNetworks/', variables('virtualNetworkName'), '/subnets/', variables('subnetName'))]"
+                          "id": "[concat('/subscriptions/', subscription().subscriptionId,'/resourceGroups/', variables('RG_VNET'), '/providers/Microsoft.Network/virtualNetworks/', variables('virtualNetworkName'), '/subnets/', variables('subnetName'))]"
                         },
                         "loadBalancerBackendAddressPools": [
                           {
