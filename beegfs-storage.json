@@ -19,7 +19,7 @@
     }
   },
   "variables": {
-    "RG_VNET" : "TSMC-EDA-NETWORK"
+    "RG_VNET" : "TSMC-EDA-NETWORK",
     "networkApiVersion": "2016-06-01",
     "insightsApiVersion": "2015-04-01",
     "computeApiVersion": "2016-04-30-preview",
