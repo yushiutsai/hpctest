@@ -100,7 +100,7 @@
     "nicName": "[concat(parameters('vmssName'), 'nic')]",
     "ipConfigName": "[concat(parameters('vmssName'), 'ipconfig')]",
     "frontEndIPConfigID": "[concat(variables('lbID'),'/frontendIPConfigurations/loadBalancerFrontEnd')]",
-    "networkApiVersion": "2017-03-30",
+    "networkApiVersion": "2017-06-01",
     "insightsApiVersion": "2015-04-01",
     "location": "[resourceGroup().location]",
 	"installLIS": "bash InstallLIS.sh",
