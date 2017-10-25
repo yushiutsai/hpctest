@@ -150,6 +150,7 @@
     },
     "RGvnetName": {
       "type": "string",
+      "defaultValue": "TSMC-EDA-NETWORK",
       "metadata": {
         "description": "Name of the RG of the virtual network which master server is using."
       }
@@ -162,6 +163,7 @@
     }
   },
   "variables": {
+    
     "networkApiVersion": "2016-06-01",
     "insightsApiVersion": "2015-04-01",
     "deploymentApiVersion": "2016-09-01",
@@ -191,8 +193,8 @@
     "image": "[parameters('VMImage')]",
     "beeGFSNodeSettings": {
       "vnetRG": "[parameters('RGvnetName')]",
-      "vnetName": "beegfs-vnet",
-      "subnetName": "beegfs-subnet",
+      "vnetName": "VNET_EDA",
+      "subnetName": "Subnet_Storage",
       "MasterName": "[parameters('masterName')]",
       "nodeType": "[parameters('nodeType')]",
       "customDomain": "mydom",
